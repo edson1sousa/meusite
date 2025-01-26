@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Usuários - Administração</title>
+    <link rel="shortcut icon" type="logo.png" href="logo.png"/>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Administração do Estoque</h1>
-    </header>
+    
     <nav>
+        <input type="checkbox" id="menu-toggle-checkbox" hidden>
+        <label for="menu-toggle-checkbox" id="menu-toggle">☰</label>
         <ul>
             <li><a href="index.html">Página Inicial</a></li>
             <li><a href="cadastro_objeto.html">Cadastro de Itens</a></li>
@@ -18,7 +21,9 @@
             <li><a href="cadastro_usuario.html">Cadastro de Usuários</a></li>
             <li><a href="lista_usuarios.html">Lista de Usuários</a></li>
         </ul>
+        <label for="menu-toggle-checkbox" id="menu-close">✖</label>
     </nav>
+     </header>
     <main>
         <section>
             <h2>Cadastrar Novo Usuário</h2>
@@ -34,7 +39,7 @@
         </section>
     </main>
     <footer>
-        <p>Autor: Seu Nome | <a href="sobre.html">Sobre o Autor</a></p>
+        <p>Autor: Edson | <a href="sobre.html">Sobre o Autor</a></p>
     </footer>
 </body>
 </html>
