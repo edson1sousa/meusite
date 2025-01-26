@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Estoque</title>
+    <link rel="shortcut icon" type="logo.png" href="logo.png"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <h1><img src="logo.png" alt="Logo do Site"> 
+           Estoque</h1>
+        </div>
+        <nav>
+            <input type="checkbox" id="menu-toggle-checkbox" hidden>
+            <label for="menu-toggle-checkbox" id="menu-toggle">☰</label>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre o Autor</a></li>
+                <li><a href="login.html">Admin</a></li>
+            </ul>
+            <label for="menu-toggle-checkbox" id="menu-close">✖</label>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Itens em Estoque</h2>
+            
+            <ul>
+                <!-- Lista de itens em estoque -->
+                <div><a href="detalhes.html?id=1">
+                    <img src="item1.jpg" alt="item1">
+                    <p>Teclado</p>
+                </a>
+            </div>
+            <div> <a href="detalhes.html?id=2">
+                    <img src="item2.jpg" alt="item2">
+                    <p>Mouse</p>
+                </a>
+            </div>
+            <div> <a href="detalhes.html?id=3">
+                    <img src="item3.jpg" alt="item3">
+                    <p>Gabinete</p>
+                </a> </div>
+                <div> <a href="detalhes.html?id=3">
+                    <img src="item4.jpg" alt="item4">
+                    <p>Cooler</p>
+                </a>
+            </div>
+            
+                <!-- Adicione mais itens conforme necessário -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Autor: Edson | <a href="sobre.html">Sobre o Autor</a></p>
+    </footer>
+</body>
+</html>

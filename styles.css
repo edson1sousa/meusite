@@ -1,0 +1,163 @@
+/* Definindo variáveis de cores e tipografia */
+:root {
+    --primary-color: #4a47a8;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Botões para abrir e fechar menu */
+#menu-toggle, #menu-close {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Seção principal */
+main {
+    padding: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table, th, td {
+    border: 1px solid var(--primary-color);
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+/* Exibição responsiva da coleção de itens */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
+}
+
+ul div {
+    flex: 1 1 calc(50% - 1rem);
+    margin-bottom: 1rem;
+}
+
+
+ul div img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Garantindo que o conteúdo seja lido sem rolagem horizontal */
+body {
+    overflow-x: hidden;
+}
+
+/* Escondendo menu e mostrando botões no mobile */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #menu-close {
+        display: none;
+    }
+
+    #menu-toggle-checkbox:checked + #menu-toggle {
+        display: none;
+    }
+
+    #menu-toggle-checkbox:checked + #menu-toggle + ul {
+        display: flex;
+    }
+
+    #menu-toggle-checkbox:checked + #menu-toggle + ul + #menu-close {
+        display: block;
+    }
+}
+
+/* Escondendo menu de navegação no layout de impressão */
+@media print {
+    nav {
+        display: none;
+    }
+}
+
